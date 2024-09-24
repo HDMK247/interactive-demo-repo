@@ -1,0 +1,62 @@
+/* style.css */
+body {
+  font-family: Arial, sans-serif;
+  padding: 20px;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#search-bar {
+  width: 300px;
+  padding: 8px;
+}
+
+#filters {
+  margin-bottom: 20px;
+}
+
+#products {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.product {
+  border: 1px solid #ddd;
+  padding: 20px;
+  text-align: center;
+}
+
+button {
+  background-color: #28a745;
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+}
+
+button:disabled {
+  background-color: #ccc;
+}
+
+#cart {
+  margin-top: 20px;
+  border: 1px solid #ddd;
+  padding: 20px;
+}
+
+#cart-items {
+  margin-bottom: 20px;
+}
+
+#cart-total {
+  font-size: 1.2em;
+}
+
+#checkout {
+  background-color: #007bff;
+}

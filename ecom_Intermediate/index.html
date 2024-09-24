@@ -1,0 +1,44 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Intermediate E-Commerce Store</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>My E-Commerce Store</h1>
+    <input type="text" id="search-bar" placeholder="Search products..." oninput="filterProducts()">
+    <div class="cart">
+      <span id="cart-count">0</span> items in cart
+    </div>
+  </header>
+
+  <main>
+    <section id="filters">
+      <h3>Filter by Price:</h3>
+      <label>
+        Min Price: <input type="number" id="min-price" value="0" oninput="filterProducts()">
+      </label>
+      <label>
+        Max Price: <input type="number" id="max-price" value="1000" oninput="filterProducts()">
+      </label>
+    </section>
+
+    <section id="products">
+      <!-- Product list dynamically added by JS -->
+    </section>
+
+    <section id="cart">
+      <h2>Your Cart</h2>
+      <div id="cart-items"></div>
+      <div id="cart-total">Total: $0</div>
+      <button id="checkout" onclick="checkout()">Checkout</button>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
